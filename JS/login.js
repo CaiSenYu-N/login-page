@@ -4,40 +4,10 @@ function $(selector){
 function $$(selector){
   return document.querySelectorAll(selector)
 }
-
-
-// $$('.modal .login').forEach(function(node){
-//   node.onclick = function(){
-//     $('.flip-modal').classList.remove('register')
-//     $('.flip-modal').classList.add('login')
-//   }
-// })
-// $$('.modal .register').forEach(function(node){
-//   node.onclick = function(){
-//     $('.flip-modal').classList.remove('login')
-//     $('.flip-modal').classList.add('register')
-//   }
-// })
-// $('.modal .login').onclick = function(){
-//   $('.flip-modal').classList.remove('register')
-//   $('.flip-modal').classList.add('login')
-// }
-// $('.modal .register').onclick = function(){
-//   $('.flip-modal').classList.remove('login')
-//   $('.flip-modal').classList.add('register')
-// }
-
-// $('header .login').onclick = function(){
-//   $('.flip-modal').classList.add('show')
-// }
-
 $('header .login').onclick = function(e){
   e.stopPropagation()
   $('.flip-modal').style.display = 'block'
 }
-
-
-
 $('.flip-modal').addEventListener('click', function(e){
   e.stopPropagation()
   if(e.target.classList.contains('login')){
