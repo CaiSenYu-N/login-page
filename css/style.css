@@ -19,13 +19,13 @@ header .login:hover {
   color: #fff;
 }
 
-.flip-modal{
+/* .flip-modal{
   display: none;
 }
 
 .show{
   display: block!important;
-}
+} */
 
 .modal {
   position: absolute;
