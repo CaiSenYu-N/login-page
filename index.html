@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>登录|注册</title>
+</head>
+<body>
+<header>
+  <a class="login" href="#">
+    <i class="fa fa-user-circle"></i>
+  </a>
+</header>
+<main>
+  <div class="flip-modal login">
+    <div class="modal modal-login">
+      <a class="close" href="#">
+        <i class="fa fa-close"></i>
+      </a>
+      <div class="tabs">
+        <a class="login active "href="#">登录</a>
+        <a class="register" href="#">注册</a>
+      </div>
+      <div class="content">
+        <div class="errormsg"></div>
+        <form action="/login" method="post">
+          <div class="input-field">
+            <i class="fa fa-user-o"></i>
+            <input name="username" type="text" placeholder="用户名">
+          </div>
+          <div class="input-field">
+            <i class="fa fa-lock"></i>
+            <input name="password" type="password" placeholder="密码">
+          </div>
+          <div class="input-field">
+            <input type="submit" value="登录">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal-register">
+      <a class="close fa fa-close" href="#"></a>
+      <div class="tabs">
+        <a class="login" href="#">登录</a>
+        <a class="register active" href="#">注册</a>
+      </div>
+      <div class="content">
+        <div class="errormsg"></div>
+        <form class="" action="/register" method="post">
+          <div class="input-field">
+            <i class="fa fa-user-o"></i>
+            <input name="username" type="text" placeholder="输入用户名">
+          </div>
+          <div class="input-field">
+            <i class="fa fa-lock"></i>
+            <input name="passeord" type="password" placeholder="输入密码">
+          </div>
+          <div class="input-field">
+            <i class="fa fa-lock"></i>
+            <input name="passeord2" type="password" placeholder="请再次输入密码">
+          </div>
+          <div class="input-field">
+            <input type="submit" value="注册">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+  <script type="text/javascript" src="JS/login.js"></script>
+</body>
+</html>
