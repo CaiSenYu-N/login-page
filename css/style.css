@@ -73,8 +73,8 @@ header .login:hover {
 }
 
 .modal .errormsg {
-  color: #ff9800;
-  font-size: 12px;
+  color: #aaa;
+  font-size: 14px;
 }
 
 .modal .content .input-field {
