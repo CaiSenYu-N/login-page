@@ -1,5 +1,5 @@
 main {
-     background: linear-gradient(to right top, rgba(38,50,105,0.48), rgba(255,152,0,0.55)), url(../img/bg-1.png) center center no-repeat  ;
+     background: linear-gradient(to right top, rgba(38,50,105,0.48), rgba(255,152,0,0.55)), url(../img/bg.png) center center no-repeat  ;
      background-size: cover;
    }
 
@@ -34,7 +34,7 @@ header .login:hover {
   transform: translate(-50%,-50%);
   width: 400px;
   padding: 16px;
-  background-color: #fff;
+  background-color: rgba(115,145,145,0.05);
   box-shadow: 0 2px 2px 3px rgba(0,0,0,0.3)
 }
 
@@ -45,7 +45,7 @@ header .login:hover {
 }
 
 .modal .close:hover {
-  color: #aaa;
+  color: #fff;
 }
 
 .modal .tabs {
@@ -60,7 +60,7 @@ header .login:hover {
 }
 
 .modal .tabs a:hover{
-  color: #aaa;
+  color: #fff;
   }
 
 .modal .tabs a.active {
@@ -96,15 +96,20 @@ header .login:hover {
 }
 
 .modal .content input[type=submit] {
-  padding: 6px;
+  padding: 6px 20px;
   border: none;
-  background: #fff;
-  box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+  background: rgba(115,145,145,0.05);
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
   outline: none;
+  color: #fff;
+  position: absolute;
+  left: calc(50% - 32px);
 }
 
 .modal .content input[type=submit]:hover {
-  color: #aaa;
+  background-color: rgba(68,68,68,0.4);
+  transition: 1s;
 }
 
 .flip-modal.login .modal-login,
